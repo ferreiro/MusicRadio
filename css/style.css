@@ -219,6 +219,17 @@ ul {
 .headerLogo p {
 	color: transparent;
 }
+.menuMobile {
+	padding: 0.95em;
+	position: absolute;
+	top: 0;
+	right: 0; 
+	cursor: pointer;
+}
+.menuMobile span:before {
+	font-size: 40px;
+	color: #fff;
+}
 .headerUser {
 	display: inline-block;
 	vertical-align: middle;
@@ -459,8 +470,8 @@ ul {
 
 /*** Single Radio **/
 
-.singleRadio {
-	width: 100%;
+.singleRadio { 
+	margin: 0 1.4%;
 	padding: 2em 0;
 	padding-bottom: 5em; 
 	display: block;
@@ -877,6 +888,15 @@ ul {
 }
 
 @media all and (max-width: 950px) {
+	.home:before {
+		display: none !important;
+	} 
+	.headerUser {
+		display: none;
+	}
+	.menu {
+		display: none;
+	}
 	.PlayerLeft,
 	.PlayerRight {
 		display: none;
@@ -885,6 +905,15 @@ ul {
 
 @media all and (min-width: 950px) {
 	
+	.menuMobile {
+		display: none;
+	}
+	.headerUser {
+		position: absolute;
+		right: 2em;
+		margin-top: 5px;
+	}
+
 	.home .header { 
 		background: transparent; 
 	}

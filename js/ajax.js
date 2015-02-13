@@ -78,6 +78,9 @@
 		if (event.value){
 			var adress = event.value;
 
+			// Animate to top
+			$("html, body").animate({ scrollTop: 0 }, 400);
+
 			$mainContent.hide(0);
 			$ajaxSpinner.show(0);
 			$mainContent.empty().load(base + event.value + ' #containerAjax', function(){
@@ -104,8 +107,7 @@
  			else {
  				$('.main').addClass("green");
  			}
-					
-
+			
 
 		}
 		var current = location.protocol + '//' + location.hostname + location.pathname;
