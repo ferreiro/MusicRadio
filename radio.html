@@ -144,6 +144,10 @@
 		</header> 
 	</section>
 
+	<div class="loader" id="loading">
+		<span></span>
+	</div>
+	
 	<nav class="menu">
 		<ul>
 			<li>
@@ -155,7 +159,7 @@
 			<li>
 				<a href="genero.html" style="color:#358d41;">Dubstep</a>
 			</li> 
- 
+	
 			<li>
 				<a href="genero.html">Mixes / sessiones</a>
 			</li> 
@@ -173,47 +177,48 @@
 		</ul>
 	</nav>
 
-	<section class="singleRadio">
-		<div class="singleRadioInt">
-
-			<div class="radioPlaylist">
-				<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/martinsolveig/sets/martin-solveig" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
-			</div> 
-
-			<div class="singleRadioAvatar" style="background-image:url(images/example.jpg);" ></div>
-			
-			<h1 class="singleRadioTitle">
-				Martin Solveig Intoxicated chart
-			</h1>
-
-			<div class="radioListenBtn">
-				<a href="#"  onclick="event.preventDefault(); $('#playlist_list #playlist1').prepend( $('.radioPlaylist') ); api_loadPlaylist(hap_players[0],{hidden: true, id: '#playlist1'}); api_playAudio(hap_players[0]); return false;">
-					<span class="icon-playsong"></span>
-					Listen Radio
-				</a>
-
-				<a href="#" >
-					<span class="icon-"></span>
-					Save
-				</a>
-			</div>
-
-
-		</div>
-
-		<div class="singleRadioBG">	
-			<div style="background-image:url(images/example.jpg);" />
-			<div class="singleRadioSolid"></div>
-		</div>
-	</section>
-
-	<div class="loader" id="loading">
-		<span></span>
-	</div>
-	
 	<div id="containerAjax">
+
+
 				 
 		<section class="radios">
+
+
+			
+			<section class="singleRadio">
+				<div class="singleRadioInt">
+
+					<div class="radioPlaylist">
+						<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/martinsolveig/sets/martin-solveig" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
+					</div> 
+
+					<div class="singleRadioAvatar" style="background-image:url(images/example.jpg);" ></div>
+					
+					<h1 class="singleRadioTitle">
+						Martin Solveig Intoxicated chart
+					</h1>
+
+					<div class="radioListenBtn">
+						<a href="#"  onclick="event.preventDefault(); $('#playlist_list #playlist1').prepend( $('.radioPlaylist') ); api_loadPlaylist(hap_players[0],{hidden: true, id: '#playlist1'}); api_playAudio(hap_players[0]); return false;">
+							<span class="icon-playsong"></span>
+							Listen Radio
+						</a>
+
+						<a href="#" >
+							<span class="icon-"></span>
+							Save
+						</a>
+					</div>
+
+
+				</div>
+
+				<div class="singleRadioBG">	
+					<div style="background-image:url(images/example.jpg);" />
+					<div class="singleRadioSolid"></div>
+				</div>
+			</section>
+
 
 			<div class="radiosTitle">
 				<h1 style="font-size:1.3em;">

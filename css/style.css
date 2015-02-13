@@ -109,6 +109,21 @@ ul {
 	z-index: 100;
 	background: rgba(255,255,255, 0.9);
 }
+.loader span {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	top: 50%;
+	margin-left: -25px;
+	margin-top: -25px;
+	z-index: 100;
+	background: url(../images/loading.gif) 50% 50%;
+	background-size: cover;
+}
+
+
 
 .separator {
 	width: 100%;
@@ -489,11 +504,11 @@ ul {
 	height: 100%;
 	background-size: cover;
 	float: left;
-	-webkit-filter: blur(90px);
-	-moz-filter: blur(90px);
-	-o-filter: blur(90px);
-	-ms-filter: blur(90px);
-	filter: blur(90px); 
+	-webkit-filter: blur(50px);
+	-moz-filter: blur(50px);
+	-o-filter: blur(50px);
+	-ms-filter: blur(50px);
+	filter: blur(50px); 
 }
 .singleRadioSolid {
 	width: 100%;

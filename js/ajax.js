@@ -79,10 +79,11 @@
 			var adress = event.value;
 
 			$mainContent.hide(0);
-			$ajaxSpinner.fadeIn();
+			$ajaxSpinner.show(0);
 			$mainContent.empty().load(base + event.value + ' #containerAjax', function(){
+				$ajaxSpinner.delay(300);
 				$ajaxSpinner.hide(0);
-				$mainContent.delay(300);
+				$mainContent.delay(0);
 				$mainContent.show(0);
 			});
 
@@ -101,7 +102,7 @@
 				$('.content').show();
 			}
  			else {
- 				$('.main').addClass("black");
+ 				$('.main').addClass("green");
  			}
 					
 
