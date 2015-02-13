@@ -1,0 +1,128 @@
+body {
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	background: #d9d9d9;
+}
+a {
+	text-decoration: none;
+}
+a, p, h1, h2, div, ul, li, body {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style: none;
+}
+.separator {
+	width: 100%;
+	display: block;
+	margin-bottom: 0.5em;
+}
+
+/*****************/
+
+.main {
+	background: url(../images/red_background.jpg);
+	background-size: cover;
+	display: block;
+}
+
+.header { 
+	margin: 0;
+	padding: 1em;
+	background: rgba(0, 0, 0, 0.3);
+	display: block;
+	text-align: center;
+}
+.headerLogo {
+	display: inline-block; 
+	margin-right: 1.5em;
+}
+.headerLogo a {
+	display: inline-block; 
+	padding: 0.5em 1em; 
+	color: #d6452e;
+}
+.headerUser {
+	display: inline-block;
+	vertical-align: middle;
+}
+.headerUser ul {
+	display: inline-block; 
+}
+.headerUser ul li {
+	display: inline-block;
+	vertical-align: middle;
+}
+.headerUser ul li:first-child:after {
+	content: "|";
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	color: rgba(255, 255, 255, 0.6);
+}
+.headerUser ul li:last-child {
+	margin-right: 0;
+}
+.headerUser ul li a {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+/** Content *********/
+
+.content { 
+	margin: 0;
+	padding: 2em 1em; 
+	display: block;
+	text-align: center;
+}
+.headline { 
+	display: block; 
+	margin-bottom: 1em;
+}
+.headline h1 {
+	 font-size: 1.8em;
+	 font-weight: 300;
+	 color: #fff;
+	 text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+} 
+.headline p {
+	 font-size: 1em;
+	 font-weight: 300;
+	 color: #fff;
+	 text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+} 
+
+.genres {
+	display: block; 
+	margin-bottom: 0;
+	text-align: center;
+}
+.genres ul { 
+	/* Blank */
+}
+.genres ul li { 
+	background: rgba(0, 0, 0, 0.3);
+	border:2px solid #38211e;
+	display: inline-block;
+	margin-bottom: 0.5em;
+}
+.genres ul li a { 
+	padding: 1em; 
+	display: inline-block;
+}
+.genres ul li a { 
+	
+}
+.g_big a {
+	color: rgba(255, 255, 255, 0.9);
+	padding: 0.9em 2em !important; 
+}
+.g_small {
+	border-width: 1.5px !important;
+}
+.g_small a {
+	color: rgba(255, 255, 255, 0.7);
+	padding: 0.6em 1.2em !important; 
+} 
+
+
