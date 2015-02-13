@@ -815,12 +815,12 @@ ul {
 
 	.content { 
 		width: 750px;
-		height: 350px;
+		height: 300px; 
 		left: 50%;
 		top: 50%;
 		margin: 0;
 		padding: 0; 
-		margin-top: -175px;
+		margin-top: -160px;
 		margin-left: -375px;
 		display: block; 
 		position: absolute;
