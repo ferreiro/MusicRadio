@@ -102,7 +102,7 @@ ul {
 }
 .genres ul li { 
 	background: rgba(0, 0, 0, 0.3);
-	border:2px solid #38211e;
+	border:2px solid rgba(125,89,84, 0.5);
 	display: inline-block;
 	margin-bottom: 0.5em;
 }
@@ -124,5 +124,26 @@ ul {
 	color: rgba(255, 255, 255, 0.7);
 	padding: 0.6em 1.2em !important; 
 } 
+
+/** Footer *********/
+
+.footer {
+	display: block;
+	text-align: center;
+	padding: 1.5em 0;
+}
+.footer ul li { 
+	display: inline-block;
+}
+.footer ul li a { 
+	color: #222;
+}
+.footer ul li:after {
+	content: "-"; 
+}
+.footer ul li:nth-child(2):after,
+.footer ul li:nth-child(6):after {
+	content: ""; 
+}
 
 
