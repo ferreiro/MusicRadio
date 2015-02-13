@@ -89,6 +89,9 @@ a {
 	transition: background-color 0.3s;
 	text-decoration: none;
 }
+.main:before {
+	transition: background-color 0.3s;
+}
 a, p, h1, h2, h3, div, ul, li, body {
 	margin: 0;
 	padding: 0;
@@ -104,9 +107,7 @@ ul {
 
 /** header colors **/
 
-.red:before ,
-.green:before ,
-.yellow:before  {
+.main:before {
 	content: "";
 	width: 100%;
 	height: 100%;
@@ -117,6 +118,12 @@ ul {
 }
 .green:before {
 	background: rgba(92, 168, 169, 1);
+}
+.black:before {
+	background: rgba(0, 0, 0, 1);
+}
+.white:before {
+	background: rgba(255,255,255, 1);
 }
 .red:before {
 	background: rgba(169, 92, 92, 1);
@@ -357,7 +364,7 @@ ul {
 .radio:hover .radioListenBtn span:before {
 	color: rgba(255,255,255, 1);
 } 
-.radioListenBtn:hover a {  
+.radio:hover .radioListenBtn a {  
 	background: #287c7d; 
 }
 .radioListenBtn a { 
@@ -372,29 +379,6 @@ ul {
 	color: rgba(255,255,255, 0.9);
 }
 
-
-/** Footer *********/
-
-.footer {
-	display: block;
-	clear: both;
-	text-align: center;
-	padding: 1.5em 0;
-	margin-bottom: 80px; 
-}
-.footer ul li { 
-	display: inline-block;
-}
-.footer ul li a { 
-	color: #222;
-}
-.footer ul li:after {
-	content: "-"; 
-}
-.footer ul li:nth-child(2):after,
-.footer ul li:last-child:after {
-	content: ""; 
-}
 
 /** pagination *********/
 
@@ -444,6 +428,70 @@ ul {
 
 	cursor: pointer;
  	position: absolute;
+
+}
+
+/*** Single Radio **/
+
+.singleRadio {
+	width: 100%;
+	padding: 2em 0;
+	padding-bottom: 5em; 
+	display: block;
+	text-align: center;
+	background-size: cover;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+}
+.singleRadioInt {
+	margin: 0 1em;
+	position: relative;
+	z-index: 4;
+}
+.singleRadioAvatar {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	background-size:cover; 
+}
+.singleRadioTitle {
+	max-width: 500px; 
+	margin: 1em auto;
+	display: block; 
+	color: #fff;
+	font-weight: 400; 
+	letter-spacing: 1px;
+}
+.singleRadioBG {
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	height: 100%; 
+	background-size:cover;
+	background: #000; 
+}
+.singleRadioBG div {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	float: left;
+	-webkit-filter: blur(90px);
+	-moz-filter: blur(90px);
+	-o-filter: blur(90px);
+	-ms-filter: blur(90px);
+	filter: blur(90px); 
+}
+.singleRadioSolid {
+	width: 100%;
+	height: 100%; 
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background:rgba(0, 0, 0, 0.6); 
 
 }
 
@@ -764,7 +812,28 @@ ul {
 	position: relative;  
 }
 
+/** Footer *********/
 
+.footer {
+	display: block;
+	clear: both;
+	text-align: center;
+	padding: 1.5em 0;
+	margin-bottom: 80px; 
+}
+.footer ul li { 
+	display: inline-block;
+}
+.footer ul li a { 
+	color: #222;
+}
+.footer ul li:after {
+	content: "-"; 
+}
+.footer ul li:nth-child(2):after,
+.footer ul li:last-child:after {
+	content: ""; 
+}
  
 @media all and (min-width: 600px) and (max-width: 949px) {
 
@@ -909,7 +978,7 @@ ul {
 	}
 } 
 
-@media all and (min-width: 1250px) {
+@media all and (min-width: 1260px) {
  
 	.menu ul {
 		width: 1200px;
