@@ -44,7 +44,7 @@
 					</h1>
 					<h2>
 						<a href="">
-						Nick Gardner - Lose You
+						 
 						</a>
 					</h2> 
 				</div>
@@ -181,7 +181,7 @@
 			</h1> 
 		</div>
 
-		<article class="radio" style="background-image:url(images/example.jpg);">
+		<article class="radio" id="1" style="background-image:url(images/example.jpg);">
 			<div class="radioPlaylist">
 				<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
 			</div> 
@@ -195,8 +195,8 @@
 					</a>
 				</h3>
 				<div class="radioListenBtn">
-					<a href="#">
-						<span class="icon-play"></span>
+					<a href="#"  onclick="event.preventDefault(); $('#playlist_list #playlist1').prepend( $('#1 .radioPlaylist') ); api_loadPlaylist(hap_players[0],{hidden: true, id: '#playlist1'}); api_playAudio(hap_players[0]); return false;">
+						<span class="icon-playsong"></span>
 						Listen Radio
 					</a>
 				</div>
@@ -218,7 +218,7 @@
 				</h3>
 				<div class="radioListenBtn">
 					<a href="#">
-						<span class="icon-play"></span>
+						<span class="icon-playsong"></span>
 						Listen Radio
 					</a>
 				</div>
@@ -241,7 +241,7 @@
 				</h3>
 				<div class="radioListenBtn">
 					<a href="#">
-						<span class="icon-play"></span>
+						<span class="icon-playsong"></span>
 						Listen Radio
 					</a>
 				</div>
@@ -264,7 +264,7 @@
 				</h3>
 				<div class="radioListenBtn">
 					<a href="#">
-						<span class="icon-play"></span>
+						<span class="icon-playsong"></span>
 						Listen Radio
 					</a>
 				</div>
@@ -287,7 +287,7 @@
 				</h3>
 				<div class="radioListenBtn">
 					<a href="#">
-						<span class="icon-play"></span>
+						<span class="icon-playsong"></span>
 						Listen Radio
 					</a>
 				</div>
@@ -310,7 +310,7 @@
 				</h3>
 				<div class="radioListenBtn">
 					<a href="#">
-						<span class="icon-play"></span>
+						<span class="icon-playsong"></span>
 						Listen Radio
 					</a>
 				</div>
@@ -332,7 +332,7 @@
 				</h3>
 				<div class="radioListenBtn">
 					<a href="#">
-						<span class="icon-play"></span>
+						<span class="icon-playsong"></span>
 						Listen Radio
 					</a>
 				</div>
@@ -354,7 +354,7 @@
 				</h3>
 				<div class="radioListenBtn">
 					<a href="#">
-						<span class="icon-play"></span>
+						<span class="icon-playsong"></span>
 						Listen Radio
 					</a>
 				</div>
@@ -376,7 +376,7 @@
 				</h3>
 				<div class="radioListenBtn">
 					<a href="#">
-						<span class="icon-play"></span>
+						<span class="icon-playsong"></span>
 						Listen Radio
 					</a>
 				</div>
@@ -398,30 +398,7 @@
 				</h3>
 				<div class="radioListenBtn">
 					<a href="#">
-						<span class="icon-play"></span>
-						Listen Radio
-					</a>
-				</div>
-			</div>
-		</article>
-
-		
-		<article class="radio" style="background-image:url(images/example.jpg);">
-			<div class="radioPlaylist">
-				<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
-			</div> 
-			<div class="radioLink">
-				<a href="radio.html"></a>
-			</div>
-			<div class="radioInfo">
-				<h3>
-					<a href="radio.html">
-						Titulo
-					</a>
-				</h3>
-				<div class="radioListenBtn">
-					<a href="#">
-						<span class="icon-play"></span>
+						<span class="icon-playsong"></span>
 						Listen Radio
 					</a>
 				</div>
@@ -444,14 +421,66 @@
 				</h3>
 				<div class="radioListenBtn">
 					<a href="#">
-						<span class="icon-play"></span>
+						<span class="icon-playsong"></span>
 						Listen Radio
 					</a>
 				</div>
 			</div>
 		</article>
 
+		
+		<article class="radio" style="background-image:url(images/example.jpg);">
+			<div class="radioPlaylist">
+				<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
+			</div> 
+			<div class="radioLink">
+				<a href="radio.html"></a>
+			</div>
+			<div class="radioInfo">
+				<h3>
+					<a href="radio.html">
+						Titulo
+					</a>
+				</h3>
+				<div class="radioListenBtn">
+					<a href="#">
+						<span class="icon-playsong"></span>
+						Listen Radio
+					</a>
+				</div>
+			</div>
+		</article>
 
+	</section>
+
+	<section class="pagination">
+		<ul>
+			<li>
+				<a href="">
+					<<
+				</a>
+			</li>
+			<li>
+				<a href="">
+					1
+				</a>
+			</li>
+			<li>
+				<a href="">
+					2
+				</a>
+			</li>
+			<li>
+				<a href="">
+					3
+				</a>
+			</li>
+			<li>
+				<a href="">
+					>>
+				</a>
+			</li>
+		</ul>
 	</section>
 	
 

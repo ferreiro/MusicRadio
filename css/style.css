@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'radio';
-	src:url('../fonts/radio.eot?-yn1emy');
-	src:url('../fonts/radio.eot?#iefix-yn1emy') format('embedded-opentype'),
-		url('../fonts/radio.woff?-yn1emy') format('woff'),
-		url('../fonts/radio.ttf?-yn1emy') format('truetype'),
-		url('../fonts/radio.svg?-yn1emy#radio') format('svg');
+	src:url('../fonts/radio.eot?gu6rh1');
+	src:url('../fonts/radio.eot?#iefixgu6rh1') format('embedded-opentype'),
+		url('../fonts/radio.woff?gu6rh1') format('woff'),
+		url('../fonts/radio.ttf?gu6rh1') format('truetype'),
+		url('../fonts/radio.svg?gu6rh1#radio') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,16 +23,59 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-volume-high:before {
+	content: "\e611";
+}
+.icon-volume-medium:before {
+	content: "\e612";
+}
+.icon-volume-low:before {
+	content: "\e613";
+}
+.icon-volume-mute:before {
+	content: "\e614";
+}
+.icon-share:before {
+	content: "\e609";
+}
+.icon-playsong:before {
+	content: "\e615";
+}
+.icon-pause:before {
+	content: "\e616";
+}
+.icon-first:before {
+	content: "\e617";
+}
+.icon-last:before {
+	content: "\e618";
+}
+.icon-write:before {
+	content: "\e60a";
+}
+.icon-close:before {
+	content: "\e607";
+}
+.icon-close2:before {
+	content: "\e608";
+}
 .icon-play:before {
 	content: "\e600";
 }
-
-.icon-facebook:before {
-	content: "\ea8d";
+.icon-close3:before {
+	content: "\e606";
 }
-
+.icon-menu:before {
+	content: "\e603";
+}
+.icon-facebook:before {
+	content: "\e605";
+}
 .icon-twitter:before {
-	content: "\ea91";
+	content: "\e604";
+}
+.icon-down:before {
+	content: "\e601";
 }
 
 
@@ -246,28 +289,6 @@ ul {
 	display: inline-block;
 	color: #1b6d6e;
 }
-.radiosTitle span {
-	width: 30px;
-	height: 30px;
-	top: 0;
-	right: 0;
-	cursor: pointer;
- 	position: absolute;
-	border-radius: 2px;
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
-	background: rgb(255,255,255);
-	-webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.44);
-	-moz-box-shadow:    1px 1px 1px 0px rgba(0, 0, 0, 0.44);
-	box-shadow:         1px 1px 1px 0px rgba(0, 0, 0, 0.44);	
-	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(244,244,244,1) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(244,244,244,1)));
-	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
-	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
-	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
-	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 );
-}
 
 .radio {
 	width: 100%;
@@ -324,8 +345,23 @@ ul {
 }
 .radioListenBtn {
 	display: block;
+	cursor: pointer;
 }  
+.radioListenBtn span:before {
+	font-size:14px;
+	margin-right: 10px;
+	padding-right: 10px;
+	color: rgba(255,255,255, 0.5);
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+}  
+.radio:hover .radioListenBtn span:before {
+	color: rgba(255,255,255, 1);
+} 
+.radioListenBtn:hover a {  
+	background: #287c7d; 
+}
 .radioListenBtn a { 
+ 
 	display: inline-block;
 	font-weight: 500;
 	background: rgba(92, 168, 169, 1);
@@ -333,7 +369,7 @@ ul {
 	-moz-border-radius: 2px;
 	border-radius: 2px;
 	padding: 0.5em 1em;
-	color: #fff;
+	color: rgba(255,255,255, 0.9);
 }
 
 
@@ -360,6 +396,56 @@ ul {
 	content: ""; 
 }
 
+/** pagination *********/
+
+.pagination {
+	
+	text-align: center;
+}
+.pagination ul {
+	
+	text-align: center;
+}
+.pagination ul li:last-child {
+	margin-right: 0;
+}
+.pagination ul li {
+	
+	display: inline-block;
+	background: red;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 100%;
+	-webkit-border-radius:100%;
+	-moz-border-radius:100%;
+	overflow: hidden;
+	margin-right: 5px;
+
+ 	background: rgb(255,255,255);
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.44);
+	-moz-box-shadow:    1px 1px 1px 0px rgba(0, 0, 0, 0.44);
+	box-shadow:         1px 1px 1px 0px rgba(0, 0, 0, 0.44);	
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(244,244,244,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(244,244,244,1)));
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 );
+
+}
+.pagination ul li a {
+	 
+	width: 50px; 
+	padding-top:16px; 
+	padding-bottom:16px; 
+	display: block;
+
+	cursor: pointer;
+ 	position: absolute;
+
+}
 
 /**************
 **** Pla yer ****/
@@ -695,6 +781,13 @@ ul {
 
 }
 
+@media all and (max-width: 950px) {
+	.PlayerLeft,
+	.PlayerRight {
+		display: none;
+	}
+}
+
 @media all and (min-width: 950px) {
 	
 	.home .header { 
@@ -786,25 +879,32 @@ ul {
 		margin-left: 0.5%;
 		margin-right: 0.5%;
 	} 
-
+	.footer {
+		margin-top: 2.5em;
+		padding-top: 2.5em;
+		border-top: 1px solid #cecece;
+	}
 	.footerHome {
 		left: 2em;
 		right: 2em;
 		position: absolute;
 		bottom: 0;
 		z-index: 3;
+		border: 0;
+		padding-top: 0;
+		margin: 0;
 		margin-bottom: 1em;
 	}
 	.footer .separator {
 		display: none;
 	}
-	.footer ul li a { 
+	.footerHome ul li a { 
 		color: rgba(255,255,255, 0.2);
 	}
-	.footer ul li { 
+	.footerHome ul li { 
 		color: rgba(255,255,255, 0.2);
 	}
-	.footer ul li:nth-child(2):after  {
+	.footerHome ul li:nth-child(2):after  {
 		content: "-"; 
 	}
 } 
