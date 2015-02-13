@@ -40,10 +40,16 @@ ul {
 	margin-right: 1.5em;
 }
 .headerLogo a {
+	width: 185px;
+	padding: 0.5em 0;   
 	display: inline-block; 
-	padding: 0.5em 1em; 
 	color: #d6452e;
 	vertical-align: middle;
+	background: url(../images/logo_provisional.png);
+	background-size: auto 100%;
+}
+.headerLogo p {
+	color: transparent;
 }
 .headerUser {
 	display: inline-block;
@@ -145,13 +151,11 @@ ul {
 	content: "-"; 
 }
 .footer ul li:nth-child(2):after,
-.footer ul li:nth-child(6):after {
+.footer ul li:last-child:after {
 	content: ""; 
 }
 
-
-
-
+ 
 
 @media all and (min-width: 1000px) {
 	.header { 
@@ -166,6 +170,7 @@ ul {
 		background: url(../images/red_background.jpg);
 		background-size: cover;
 		display: block;
+		overflow: auto;
 	}
 	.content { 
 		width: 750px;
@@ -186,6 +191,7 @@ ul {
 	}
 	.headline h1 {
 		 font-size: 3em;
+		 margin-bottom: 0.2em;
 	} 
 	.headline h2 {
 		 font-size: 1.5em;
@@ -215,6 +221,18 @@ ul {
 		position: absolute;
 		bottom: 0;
 		z-index: 3;
+	}
+	.footer .separator {
+		display: none;
+	}
+	.footer ul li a { 
+		color: rgba(255,255,255, 0.2);
+	}
+	.footer ul li { 
+		color: rgba(255,255,255, 0.2);
+	}
+	.footer ul li:nth-child(2):after  {
+		content: "-"; 
 	}
 }
 
