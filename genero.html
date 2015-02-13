@@ -13,122 +13,6 @@
 </head>
 <body>
  
-
-	<div class="Player" id="Player">
-
-		<div class="player_progress">
-			<div class="progress_bg"></div>
-			<div class="load_progress"></div>
-			<div class="play_progress">
-				<span></span>
-			</div>
-			<div class="player_progress_tooltip">
-				<span></span>
-				<p></p>
-			</div>
-		</div>
-
-		<div class="PlayerContent">
-
-			<div class="PlayerLeft">
-				<div class="PlayerImage">
-					<div class="thumb"></div>
-				</div>
-				<div class="PlayerInfo">
-					<h1>
-						<a href="">
-							<div class="player_mediaName_Mask">
-							  <div class="player_mediaName"></div>
-							</div>
-						</a>
-					</h1>
-					<h2>
-						<a href="">
-						 
-						</a>
-					</h2> 
-				</div>
-			</div>
-
-			<div class="PlayerCenter">
-				
-				<div class="PlayerControllers">
-
-					<!-- Controls_prev and control son las clases
-					que hacen que funcionen estos botones. Controls 
-					es un estilo que he puesto yo -->
-
-					<div class="controls controls_prev icon-first">
-						<div class="go_prev"></div>
-					</div>
-
-					<div class="controls controls_toggle ">
-						<div class="icon-playsong"></div>
-	 				</div>
-
-					<div class="controls controls_next icon-last">
-						<div class="go_next"></div>
-					</div> 
-
-				</div>
-				
-			</div>
-
-			<div class="PlayerRight">
-				
-				<div class="PlayerTime" style="display: ;">
-					<div class="player_mediaTime_current">00:00</div>
-					<div class="player_mediaTime_total">00:00</div>
-				</div>
-	 
-				<div class="PlayerShare">
-					<div class="controls ">
-						<div class="icon-share"></div>
-					</div> 
-				</div>
-
-				<div class="PlayerVolume">
-					<div class="controls player_volume">
-						<div class="icon-volume-high"></div>
-					</div>
-					<div class="volume_seekbar" data-orientation="horizontal" >
-						<div class="volume_bg"></div>
-						<div class="volume_level"><span></span></div>
-						<div class="player_volume_tooltip"><p style="display:none;"></p></div>
-					</div>
-				</div>
-			</div>
-
-			<!-- List of playlists -->
-			<div id="playlist_list">
-			             
-			     <!-- local playlist -->
-			     <ul id='playlist1'>
-
-			     	<li class= 'playlistItem' data-type='soundcloud' data-path='https://soundcloud.com/music4deejays/sets/electro-house-on-music4deejays'></li>
-			     	
-<!-- 
-			        <li class= 'playlistItem' data-type='local' data-mp3='player/audio/1.mp3'>
-			        	<a class='playlistNonSelected' href='#'>
-			        		Wolv - Dyro
-			        	</a>
-			        	<a class='playlistNonSelected' href='#'>
-			        		<img src="" />
-			        	</a>
-	 
-
-	                    <a class='dlink' href='#' data-dlink='../media/audio/1/Tim_McMorris_-_A_Bright_And_Hopeful_Future.mp3'><img src='media/data/dlink.png' alt = 'download'/></a>
-
-
-			        </li> -->
-
-
-			     </ul>
-			 </div>
-	 
-
-		</div>
-	</div>
  
 	<section class="main green">
 		<header class="header">
@@ -144,345 +28,354 @@
 		</header> 
 	</section>
 
-	<nav class="menu">
-		<ul>
-			<li>
-				<a href="genero.html" style="color:#b46e6e;">Progressive</a>
-			</li>
-			<li class="selected">
-				<a href="genero.html" style="color:#3c9596;">Electro House</a>
-			</li>
-			<li>
-				<a href="genero.html" style="color:#358d41;">Dubstep</a>
-			</li> 
- 
-			<li>
-				<a href="genero.html">Mixes / sessiones</a>
-			</li> 
-			<li>
-				<a href="genero.html"><span class="icon-random"></span>Random</a>
-			</li> 
-			<li>
-				<a href="genero.html">User's radio</a>
-			</li> 
-			<li class="create">
-				<a href="genero.html">
-					Create your radio
-				</a>
-			</li> 
-		</ul>
-	</nav>
-
-	<section class="radios">
-
-		<div class="radiosTitle">
-			<h1>
-				Electro House
-			</h1> 
-		</div>
-
-		<article class="radio" id="1" style="background-image:url(images/example.jpg);">
-			<div class="radioPlaylist">
-				<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
-			</div> 
-			<div class="radioLink">
-				<a href="radio.html"></a>
-			</div>
-			<div class="radioInfo">
-				<h3>
-					<a href="radio.html">
-						Titulo
-					</a>
-				</h3>
-				<div class="radioListenBtn">
-					<a href="#"  onclick="event.preventDefault(); $('#playlist_list #playlist1').prepend( $('#1 .radioPlaylist') ); api_loadPlaylist(hap_players[0],{hidden: true, id: '#playlist1'}); api_playAudio(hap_players[0]); return false;">
-						<span class="icon-playsong"></span>
-						Listen Radio
-					</a>
-				</div>
-			</div>
-		</article>
-
-		<article class="radio" style="background-image:url(images/example.jpg);">
-			<div class="radioPlaylist">
-				<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
-			</div> 
-			<div class="radioLink">
-				<a href="radio.html"></a>
-			</div>
-			<div class="radioInfo">
-				<h3>
-					<a href="radio.html">
-						Titulo
-					</a>
-				</h3>
-				<div class="radioListenBtn">
-					<a href="#">
-						<span class="icon-playsong"></span>
-						Listen Radio
-					</a>
-				</div>
-			</div>
-		</article>
-		
-
-		<article class="radio" style="background-image:url(images/example.jpg);">
-			<div class="radioPlaylist">
-				<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
-			</div> 
-			<div class="radioLink">
-				<a href="radio.html"></a>
-			</div>
-			<div class="radioInfo">
-				<h3>
-					<a href="radio.html">
-						Titulo
-					</a>
-				</h3>
-				<div class="radioListenBtn">
-					<a href="#">
-						<span class="icon-playsong"></span>
-						Listen Radio
-					</a>
-				</div>
-			</div>
-		</article>
-		
-
-		<article class="radio" style="background-image:url(images/example.jpg);">
-			<div class="radioPlaylist">
-				<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
-			</div> 
-			<div class="radioLink">
-				<a href="radio.html"></a>
-			</div>
-			<div class="radioInfo">
-				<h3>
-					<a href="radio.html">
-						Titulo
-					</a>
-				</h3>
-				<div class="radioListenBtn">
-					<a href="#">
-						<span class="icon-playsong"></span>
-						Listen Radio
-					</a>
-				</div>
-			</div>
-		</article>
-		
-
-		<article class="radio" style="background-image:url(images/example.jpg);">
-			<div class="radioPlaylist">
-				<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
-			</div> 
-			<div class="radioLink">
-				<a href="radio.html"></a>
-			</div>
-			<div class="radioInfo">
-				<h3>
-					<a href="radio.html">
-						Titulo
-					</a>
-				</h3>
-				<div class="radioListenBtn">
-					<a href="#">
-						<span class="icon-playsong"></span>
-						Listen Radio
-					</a>
-				</div>
-			</div>
-		</article>
-		
-		
-		<article class="radio" style="background-image:url(images/example.jpg);">
-			<div class="radioPlaylist">
-				<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
-			</div> 
-			<div class="radioLink">
-				<a href="radio.html"></a>
-			</div>
-			<div class="radioInfo">
-				<h3>
-					<a href="radio.html">
-						Titulo
-					</a>
-				</h3>
-				<div class="radioListenBtn">
-					<a href="#">
-						<span class="icon-playsong"></span>
-						Listen Radio
-					</a>
-				</div>
-			</div>
-		</article>
-
-		<article class="radio" style="background-image:url(images/example.jpg);">
-			<div class="radioPlaylist">
-				<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
-			</div> 
-			<div class="radioLink">
-				<a href="radio.html"></a>
-			</div>
-			<div class="radioInfo">
-				<h3>
-					<a href="radio.html">
-						Titulo
-					</a>
-				</h3>
-				<div class="radioListenBtn">
-					<a href="#">
-						<span class="icon-playsong"></span>
-						Listen Radio
-					</a>
-				</div>
-			</div>
-		</article>
-
-		<article class="radio" style="background-image:url(images/example.jpg);">
-			<div class="radioPlaylist">
-				<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
-			</div> 
-			<div class="radioLink">
-				<a href="radio.html"></a>
-			</div>
-			<div class="radioInfo">
-				<h3>
-					<a href="radio.html">
-						Titulo
-					</a>
-				</h3>
-				<div class="radioListenBtn">
-					<a href="#">
-						<span class="icon-playsong"></span>
-						Listen Radio
-					</a>
-				</div>
-			</div>
-		</article>
-		
-		<article class="radio" style="background-image:url(images/example.jpg);">
-			<div class="radioPlaylist">
-				<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
-			</div> 
-			<div class="radioLink">
-				<a href="radio.html"></a>
-			</div>
-			<div class="radioInfo">
-				<h3>
-					<a href="radio.html">
-						Titulo
-					</a>
-				</h3>
-				<div class="radioListenBtn">
-					<a href="#">
-						<span class="icon-playsong"></span>
-						Listen Radio
-					</a>
-				</div>
-			</div>
-		</article>
-		
-		<article class="radio" style="background-image:url(images/example.jpg);">
-			<div class="radioPlaylist">
-				<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
-			</div> 
-			<div class="radioLink">
-				<a href="radio.html"></a>
-			</div>
-			<div class="radioInfo">
-				<h3>
-					<a href="radio.html">
-						Titulo
-					</a>
-				</h3>
-				<div class="radioListenBtn">
-					<a href="#">
-						<span class="icon-playsong"></span>
-						Listen Radio
-					</a>
-				</div>
-			</div>
-		</article>
-
-		
-		<article class="radio" style="background-image:url(images/example.jpg);">
-			<div class="radioPlaylist">
-				<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
-			</div> 
-			<div class="radioLink">
-				<a href="radio.html"></a>
-			</div>
-			<div class="radioInfo">
-				<h3>
-					<a href="radio.html">
-						Titulo
-					</a>
-				</h3>
-				<div class="radioListenBtn">
-					<a href="#">
-						<span class="icon-playsong"></span>
-						Listen Radio
-					</a>
-				</div>
-			</div>
-		</article>
-
-		
-		<article class="radio" style="background-image:url(images/example.jpg);">
-			<div class="radioPlaylist">
-				<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
-			</div> 
-			<div class="radioLink">
-				<a href="radio.html"></a>
-			</div>
-			<div class="radioInfo">
-				<h3>
-					<a href="radio.html">
-						Titulo
-					</a>
-				</h3>
-				<div class="radioListenBtn">
-					<a href="#">
-						<span class="icon-playsong"></span>
-						Listen Radio
-					</a>
-				</div>
-			</div>
-		</article>
-
-	</section>
-
-	<section class="pagination">
-		<ul>
-			<li>
-				<a href="">
-					<<
-				</a>
-			</li>
-			<li>
-				<a href="">
-					1
-				</a>
-			</li>
-			<li>
-				<a href="">
-					2
-				</a>
-			</li>
-			<li>
-				<a href="">
-					3
-				</a>
-			</li>
-			<li>
-				<a href="">
-					>>
-				</a>
-			</li>
-		</ul>
-	</section>
+	<div class="loader" id="loading">
+		<span></span>
+	</div>
 	
+	<div id="containerAjax">
+			 
+		
+
+		<nav class="menu">
+			<ul>
+				<li>
+					<a href="genero.html" style="color:#b46e6e;">Progressive</a>
+				</li>
+				<li class="selected">
+					<a href="genero.html" style="color:#3c9596;">Electro House</a>
+				</li>
+				<li>
+					<a href="genero.html" style="color:#358d41;">Dubstep</a>
+				</li> 
+	 
+				<li>
+					<a href="genero.html">Mixes / sessiones</a>
+				</li> 
+				<li>
+					<a href="genero.html"><span class="icon-random"></span>Random</a>
+				</li> 
+				<li>
+					<a href="genero.html">User's radio</a>
+				</li> 
+				<li class="create">
+					<a href="genero.html">
+						Create your radio
+					</a>
+				</li> 
+			</ul>
+		</nav>
+
+		<section class="radios">
+
+			<div class="radiosTitle">
+				<h1>
+					Electro House
+				</h1> 
+			</div>
+
+			<article class="radio" id="1" style="background-image:url(images/example.jpg);">
+				<div class="radioPlaylist">
+					<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
+				</div> 
+				<div class="radioLink">
+					<a href="radio.html"></a>
+				</div>
+				<div class="radioInfo">
+					<h3>
+						<a href="radio.html">
+							Titulo
+						</a>
+					</h3>
+					<div class="radioListenBtn">
+						<a href="#"  onclick="event.preventDefault(); $('#playlist_list #playlist1').prepend( $('#1 .radioPlaylist') ); api_loadPlaylist(hap_players[0],{hidden: true, id: '#playlist1'}); api_playAudio(hap_players[0]); return false;">
+							<span class="icon-playsong"></span>
+							Listen Radio
+						</a>
+					</div>
+				</div>
+			</article>
+
+			<article class="radio" style="background-image:url(images/example.jpg);">
+				<div class="radioPlaylist">
+					<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
+				</div> 
+				<div class="radioLink">
+					<a href="radio.html"></a>
+				</div>
+				<div class="radioInfo">
+					<h3>
+						<a href="radio.html">
+							Titulo
+						</a>
+					</h3>
+					<div class="radioListenBtn">
+						<a href="#">
+							<span class="icon-playsong"></span>
+							Listen Radio
+						</a>
+					</div>
+				</div>
+			</article>
+			
+
+			<article class="radio" style="background-image:url(images/example.jpg);">
+				<div class="radioPlaylist">
+					<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
+				</div> 
+				<div class="radioLink">
+					<a href="radio.html"></a>
+				</div>
+				<div class="radioInfo">
+					<h3>
+						<a href="radio.html">
+							Titulo
+						</a>
+					</h3>
+					<div class="radioListenBtn">
+						<a href="#">
+							<span class="icon-playsong"></span>
+							Listen Radio
+						</a>
+					</div>
+				</div>
+			</article>
+			
+
+			<article class="radio" style="background-image:url(images/example.jpg);">
+				<div class="radioPlaylist">
+					<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
+				</div> 
+				<div class="radioLink">
+					<a href="radio.html"></a>
+				</div>
+				<div class="radioInfo">
+					<h3>
+						<a href="radio.html">
+							Titulo
+						</a>
+					</h3>
+					<div class="radioListenBtn">
+						<a href="#">
+							<span class="icon-playsong"></span>
+							Listen Radio
+						</a>
+					</div>
+				</div>
+			</article>
+			
+
+			<article class="radio" style="background-image:url(images/example.jpg);">
+				<div class="radioPlaylist">
+					<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
+				</div> 
+				<div class="radioLink">
+					<a href="radio.html"></a>
+				</div>
+				<div class="radioInfo">
+					<h3>
+						<a href="radio.html">
+							Titulo
+						</a>
+					</h3>
+					<div class="radioListenBtn">
+						<a href="#">
+							<span class="icon-playsong"></span>
+							Listen Radio
+						</a>
+					</div>
+				</div>
+			</article>
+			
+			
+			<article class="radio" style="background-image:url(images/example.jpg);">
+				<div class="radioPlaylist">
+					<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
+				</div> 
+				<div class="radioLink">
+					<a href="radio.html"></a>
+				</div>
+				<div class="radioInfo">
+					<h3>
+						<a href="radio.html">
+							Titulo
+						</a>
+					</h3>
+					<div class="radioListenBtn">
+						<a href="#">
+							<span class="icon-playsong"></span>
+							Listen Radio
+						</a>
+					</div>
+				</div>
+			</article>
+
+			<article class="radio" style="background-image:url(images/example.jpg);">
+				<div class="radioPlaylist">
+					<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
+				</div> 
+				<div class="radioLink">
+					<a href="radio.html"></a>
+				</div>
+				<div class="radioInfo">
+					<h3>
+						<a href="radio.html">
+							Titulo
+						</a>
+					</h3>
+					<div class="radioListenBtn">
+						<a href="#">
+							<span class="icon-playsong"></span>
+							Listen Radio
+						</a>
+					</div>
+				</div>
+			</article>
+
+			<article class="radio" style="background-image:url(images/example.jpg);">
+				<div class="radioPlaylist">
+					<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
+				</div> 
+				<div class="radioLink">
+					<a href="radio.html"></a>
+				</div>
+				<div class="radioInfo">
+					<h3>
+						<a href="radio.html">
+							Titulo
+						</a>
+					</h3>
+					<div class="radioListenBtn">
+						<a href="#">
+							<span class="icon-playsong"></span>
+							Listen Radio
+						</a>
+					</div>
+				</div>
+			</article>
+			
+			<article class="radio" style="background-image:url(images/example.jpg);">
+				<div class="radioPlaylist">
+					<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
+				</div> 
+				<div class="radioLink">
+					<a href="radio.html"></a>
+				</div>
+				<div class="radioInfo">
+					<h3>
+						<a href="radio.html">
+							Titulo
+						</a>
+					</h3>
+					<div class="radioListenBtn">
+						<a href="#">
+							<span class="icon-playsong"></span>
+							Listen Radio
+						</a>
+					</div>
+				</div>
+			</article>
+			
+			<article class="radio" style="background-image:url(images/example.jpg);">
+				<div class="radioPlaylist">
+					<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
+				</div> 
+				<div class="radioLink">
+					<a href="radio.html"></a>
+				</div>
+				<div class="radioInfo">
+					<h3>
+						<a href="radio.html">
+							Titulo
+						</a>
+					</h3>
+					<div class="radioListenBtn">
+						<a href="#">
+							<span class="icon-playsong"></span>
+							Listen Radio
+						</a>
+					</div>
+				</div>
+			</article>
+
+			
+			<article class="radio" style="background-image:url(images/example.jpg);">
+				<div class="radioPlaylist">
+					<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
+				</div> 
+				<div class="radioLink">
+					<a href="radio.html"></a>
+				</div>
+				<div class="radioInfo">
+					<h3>
+						<a href="radio.html">
+							Titulo
+						</a>
+					</h3>
+					<div class="radioListenBtn">
+						<a href="#">
+							<span class="icon-playsong"></span>
+							Listen Radio
+						</a>
+					</div>
+				</div>
+			</article>
+
+			
+			<article class="radio" style="background-image:url(images/example.jpg);">
+				<div class="radioPlaylist">
+					<li class="playlistItem" data-type="soundcloud" data-path="https://soundcloud.com/music4deejays/deorro-taylor-swift-stopping-blank-space-teo-mandrelli-mashup" data-thumb="http://music4deejays.com/media/uploads/2014/12/artworks-000101158436-mvnl63-t500x500.jpg"></li>
+				</div> 
+				<div class="radioLink">
+					<a href="radio.html"></a>
+				</div>
+				<div class="radioInfo">
+					<h3>
+						<a href="radio.html">
+							Titulo
+						</a>
+					</h3>
+					<div class="radioListenBtn">
+						<a href="#">
+							<span class="icon-playsong"></span>
+							Listen Radio
+						</a>
+					</div>
+				</div>
+			</article>
+
+		</section>
+
+		<section class="pagination">
+			<ul>
+				<li>
+					<a href="">
+						<<
+					</a>
+				</li>
+				<li>
+					<a href="">
+						1
+					</a>
+				</li>
+				<li>
+					<a href="">
+						2
+					</a>
+				</li>
+				<li>
+					<a href="">
+						3
+					</a>
+				</li>
+				<li>
+					<a href="">
+						>>
+					</a>
+				</li>
+			</ul>
+		</section>
+	
+	</div>
 
 	<footer class="footer">
 		<ul> 
@@ -503,10 +396,16 @@
 		</ul>
 	</footer>
 
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js?ver=3.9.2'></script> 
+
+	<!-- http://benalman.com/projects/jquery-urlinternal-plugin/ -->
+	<script src='js/jquery.ba-urlinternal.min.js'></script>
+	<!-- http://www.asual.com/jquery/address/ -->
+	<script src='js/jquery.address-1.5.js'></script>
+
 
 
 	<script type="text/javascript" src="js/swfobject.js"></script><!-- flash backup --> 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="js/scripts.js"></script>
 
 	<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script><!-- mobile drag/sort -->
@@ -516,6 +415,16 @@
 	<script type="text/javascript" src="js/jquery.html5audio.func.js"></script>
 
 	<script type="text/javascript" src="js/jquery.html5audio.settings_classic_multiple.js"></script>
+
+
+	<script>
+	// Warning, global variable =/
+	var base = 'http://music4deejays.com/radio';
+ 	</script>
+
+
+	<script type="text/javascript" src="js/ajax.js"></script>
+
 
 
 </body>

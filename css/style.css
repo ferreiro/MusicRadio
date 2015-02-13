@@ -99,6 +99,17 @@ a, p, h1, h2, h3, div, ul, li, body {
 ul {
 	list-style: none;
 }
+
+.loader {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	z-index: 100;
+	background: rgba(255,255,255, 0.9);
+}
+
 .separator {
 	width: 100%;
 	display: block;
