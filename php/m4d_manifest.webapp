@@ -1,0 +1,17 @@
+{
+  "name": "music4deejays",
+  "description": "holahola",
+  "launch_path": "/",
+  "icons": {
+    "32": "/media/themes/oct_14_m4d/static/favicons/favicon-32.png",
+    "64": "/media/themes/oct_14_m4d/static/favicons/favicon-64.png",
+    "96": "/media/themes/oct_14_m4d/static/favicons/favicon-96.png",
+    "160": "/media/themes/oct_14_m4d/static/favicons/favicon-160.png",
+    "196": "/media/themes/oct_14_m4d/static/favicons/favicon-196.png"
+  },
+  "developer": {
+    "name": "Guillermo López, Mozilla Hispano",
+    "url": "http://github.com/mozillahispano/"
+  },
+  "chrome": { "navigation": true }
+}
