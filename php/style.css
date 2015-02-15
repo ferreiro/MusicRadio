@@ -86,10 +86,10 @@ body {
 	background: #f0f0f0;
 }
 a {
-	transition: background-color 0.3s;
+	transition: 0.3s;
 	text-decoration: none;
 }
-.main:before {
+.header:before {
 	transition: background-color 0.3s;
 }
 a, p, h1, h2, h3, div, ul, li, body {
@@ -131,34 +131,11 @@ ul {
 	margin-bottom: 0.5em;
 }
 
-/** header colors **/
-
-.main:before {
-	content: "";
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 0;
-}
-.green:before {
-	background: rgba(92, 168, 169, 1);
-}
-.black:before {
-	background: rgba(0, 0, 0, 1);
-}
-.white:before {
-	background: rgba(255,255,255, 1);
-}
-.red:before {
-	background: rgba(169, 92, 92, 1);
-}
 
 /** Menu **/
 
 .menuFixed {
-	position: fixed;
+	position: fixed !important;
 	top: 0;
 }
 
@@ -168,10 +145,11 @@ ul {
 	border-bottom: 1px solid #cecece;
 	background: #fff;
 	z-index: 10;
+	position: relative;
 }
 .menu ul {
 	text-align: center;
-	margin: 0 1em;
+	margin: 0 1em; 
 }
 .menu ul li.selected a { 
 	padding-bottom: 1.1em;
@@ -193,6 +171,12 @@ ul {
 	margin-top: 0.4em ;
 	padding: 0.5em 0.5em !important;
 	border: 1px solid #cecece;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+.create a:hover {
+	background: #f6f6f6;  
 }
 
 
@@ -208,17 +192,37 @@ ul {
 	/* Nothing for mobiles **/
 }
 
+
+/** header colors **/
+
+
 .header { 
 	margin: 0;
 	padding: 1em;
 	background: rgba(0, 0, 0, 0.3);
 	display: block;
 	text-align: center;
-	z-index: 20;
+	z-index: 15;
 	position: relative;
+	background: rgba(92, 168, 169, 1); 
+	background: #5ca8a9;
+} 
+.green:before {
+	background: rgba(92, 168, 169, 1);
+}
+.black:before {
+	background: rgba(0, 0, 0, 1);
+}
+.white:before {
+	background: rgba(255,255,255, 1);
+}
+.red:before {
+	background: rgba(169, 92, 92, 1);
 }
 .headerLogo {
-	display: inline-block;  
+	display: inline-block; 
+	z-index: 30;
+	position: relative; 
 }
 .headerLogo a {
 	width: 185px;
@@ -246,6 +250,8 @@ ul {
 .headerUser {
 	display: inline-block;
 	vertical-align: middle;
+	z-index: 30;
+	position: relative; 
 }
 .headerUser ul {
 	display: inline-block; 
@@ -423,18 +429,26 @@ ul {
 .radio:hover .radioListenBtn a {  
 	background: #287c7d; 
 }
+.radioListenBtnGreen  {
+	background: rgba(92, 168, 169, 1) !important;
+}
 .radioListenBtn a { 
  
 	display: inline-block;
 	font-weight: 500;
 	background: rgba(92, 168, 169, 1);
+	background: rgba(84, 84, 84, 0.8);
+	-webkit-border-radius: 2px;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;
 	padding: 0.5em 1em;
 	color: rgba(255,255,255, 0.9);
+	margin-right: 0.3em;
 }
-
+.radioListenBtn a:last-child { 
+	margin-right: 0;
+}
 
 /** pagination *********/
 
@@ -492,7 +506,7 @@ ul {
 .singleRadio { 
 	margin: 0 1.4%;
 	padding: 2em 0;
-	padding-bottom: 5em; 
+	padding-bottom: 3em; 
 	display: block;
 	text-align: center;
 	background-size: cover;
@@ -510,27 +524,33 @@ ul {
 	height: 200px;
 	display: inline-block;
 	background-size:cover; 
+	margin-bottom: 1em;
 }
 .singleRadioSubtitle {
-	max-width: 500px; 
-	margin: 1em auto;
+	max-width: 350px; 
+	margin: 0 auto !important;
 	display: block;   
-	text-align: center;	 
+	text-align: center;
+	font-size: 1em !important;
+	font-weight: 300;	 
 }
 .singleRadioSubtitle a {  
 	display: inline-block; 
 	color: #fff;
+	padding: 0.2em 0.5em;
 	font-size: 1em !important;
 	border: 1px solid rgba(255,255,255, 0.5);
 	border-radius: 2px;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;	
-	font-weight: 400; 
+	font-weight: 300; 
 	letter-spacing: 1px;
 }
 .singleRadioTitle {
-	max-width: 500px; 
-	margin: 1em auto;
+	max-width: 350px; 
+	font-size: 1.3em;
+	margin: 0.5em auto;
+	margin-bottom: 0.8em; 
 	display: block; 
 	color: #fff;
 	font-weight: 400; 
@@ -566,6 +586,19 @@ ul {
 	left: 0;
 	background:rgba(0, 0, 0, 0.6); 
 
+}
+
+.singleRadioRelatedTitle {
+	position: relative;
+	text-align: center;
+	margin: 1em;
+	display: block;
+}
+.singleRadioRelatedTitle {
+	font-size: 1em;
+	font-weight: 400;
+	color: #222;
+	text-transform: capitalize;
 }
 
 /**************
@@ -907,7 +940,18 @@ ul {
 .footer ul li:last-child:after {
 	content: ""; 
 }
- 
+
+
+@media all and (max-width: 600px) {
+ 	
+ 	.menu {
+ 		padding-bottom: 0.9em;
+ 	}
+	.singleRadio {  
+		padding: 1.5em 0; 
+
+	}
+}
 @media all and (min-width: 600px) and (max-width: 949px) {
 
  	.radio {
@@ -952,10 +996,6 @@ ul {
 		position: absolute;
 		right: 2em;
 		margin-top: 5px;
-	}
-
-	.home .header { 
-		background: transparent; 
 	}
 
 	.subcategory {
@@ -1043,6 +1083,15 @@ ul {
 		margin-left: 0.5%;
 		margin-right: 0.5%;
 	} 
+
+	.singleRadioTitle,
+	.singleRadioSubtitle {
+		max-width: 500px; 
+	}
+	.singleRadioTitle {
+		font-size: 2em;
+	}
+
 	.footer {
 		margin-top: 2.5em;
 		padding-top: 2.5em;

@@ -48,7 +48,7 @@
                         <?php the_title(); ?>
                     </a>
                 </h3>
-                <div class="radioListenBtn">
+                <div class="radioListenBtn ">
                     <a href="#" onclick="event.preventDefault(); $('#playlist_list #playlist1').prepend( $('#<?php echo $id; ?> .radioPlaylist') ); api_loadPlaylist(hap_players[0],{hidden: true, id: '#playlist1'}); api_playAudio(hap_players[0]); return false;">
                         <span class="icon-playsong"></span>
                         Listen Radio
@@ -101,7 +101,7 @@
                     </h1>
 
                     <div class="radioListenBtn">
-                        <a href="#" onclick="event.preventDefault(); $('#playlist_list #playlist1').prepend( $('#single .radioPlaylist') ); api_loadPlaylist(hap_players[0],{hidden: true, id: '#playlist1'}); api_playAudio(hap_players[0]); return false;">
+                        <a href="#" class="radioListenBtnGreen" onclick="event.preventDefault(); $('#playlist_list #playlist1').prepend( $('#single .radioPlaylist') ); api_loadPlaylist(hap_players[0],{hidden: true, id: '#playlist1'}); api_playAudio(hap_players[0]); return false;">
                             <span class="icon-playsong"></span>
                             Listen Radio
                         </a>
@@ -125,11 +125,9 @@
 
             <? endwhile; endif; ?> 
 
-            <div class="radiosTitle">
-                <h1 style="font-size:1.3em;">
-                    Discover more radios
-                </h1> 
-            </div>
+            <h1 class="singleRadioRelatedTitle">
+                Discover more radios
+            </h1>  
 
             <?php query_posts(array('orderby' => 'rand', 'showposts' => 4 )); 
                 if (have_posts()) : while (have_posts()) : the_post(); ?>

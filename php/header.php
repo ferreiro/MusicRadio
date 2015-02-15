@@ -67,61 +67,20 @@
   
 
 
-  <section class="main home">
-
-    <header class="header">
-      <div class="headerLogo">
-        <a href="index.html"><p>Burning Hits</p></a>
-      </div>
-      <div class="menuMobile">
-        <span class="icon-menu"></span>
-      </div>
-      <div class="headerUser">
-        <ul>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Register</a></li>
-        </ul>
-      </div>
-    </header>
-
-
-    <section class="content">
-      <article class="headline">
-        <h1>
-          The radio you love
-        </h1>
-        <h2>
-          Choose a genre
-        </h2>
-      </article>
-      <article class="genres">
-        <ul>
-          <li class="genre g_big">
-            <a href="genero.html" style="color:#b46e6e;">Progressive</a>
-          </li>
-          <li class="genre g_big">
-            <a href="genero.html" style="color:#99dedf;">Electro House</a>
-          </li>
-          <li class="genre g_big">
-            <a href="genero.html" style="color:#99dfa3;">Dubstep</a>
-          </li> 
-
-          <div class="separator"></div>
-
-          <li class="genre g_small">
-            <a href="genero.html">Mixes / sessiones</a>
-          </li> 
-          <li class="genre g_small">
-            <a href="genero.html"><span class="icon-random"></span>Random</a>
-          </li> 
-          <li class="genre g_small">
-            <a href="genero.html">User's radio</a>
-          </li> 
-        </ul>
-      </article> 
-    </section>
-
-  </section>
+  <header class="header">
+    <div class="headerLogo">
+      <a href="/"><p>Burning Hits</p></a>
+    </div>
+    <div class="menuMobile">
+      <span class="icon-menu"></span>
+    </div>
+    <div class="headerUser">
+      <ul>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+      </ul>
+    </div>
+  </header>
 
   <div class="loader" id="loading">
     <span></span>
